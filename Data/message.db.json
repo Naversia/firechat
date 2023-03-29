@@ -1,0 +1,27 @@
+{
+  "messages": [
+    {
+      "text": "Hi Ben",
+      "senderEmail": "naversias@gmail.com",
+      "getterEmail": "naversias123@gmail.com",
+      "sentTime": "Fri Dec 9 2022 15:19:58 GMT+0200 (Israel Standard Time)",
+      "id": 1
+    },
+    {
+      "text": "how are you shis?",
+      "senderEmail": "naversias@gmail.com",
+      "userSenderEmailId": 1,
+      "getterEmail": "naversias123@gmail.com",
+      "userGetterEmailId": 3,
+      "sentTime": "Fri Dec 9 2022 15:19:58 GMT+0200 (Israel Standard Time)",
+      "id": 2
+    },
+    {
+      "text": "how are you shis?",
+      "senderEmail": "naversias@gmail.com",
+      "getterEmail": "naversias123@gmail.com",
+      "sentTime": "Fri Dec 9 2022 15:19:58 GMT+0200 (Israel Standard Time)",
+      "id": 3
+    }
+  ]
+}

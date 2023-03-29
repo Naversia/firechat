@@ -1,0 +1,231 @@
+[debug] [2022-12-15T15:01:53.168Z] ----------------------------------------------------------------------
+[debug] [2022-12-15T15:01:53.171Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-15T15:01:53.172Z] CLI Version:   11.18.0
+[debug] [2022-12-15T15:01:53.172Z] Platform:      win32
+[debug] [2022-12-15T15:01:53.173Z] Node Version:  v16.17.0
+[debug] [2022-12-15T15:01:53.174Z] Time:          Thu Dec 15 2022 17:01:53 GMT+0200 (שעון ישראל (חורף))
+[debug] [2022-12-15T15:01:53.175Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-15T15:01:53.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T15:01:53.288Z] > authorizing via signed-in user (naversias@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects code\main-project-chatApp\firereact-chat-app\firechat
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-15T15:02:15.501Z] Using project from CLI flag: navision-chat
+[debug] [2022-12-15T15:02:15.503Z] > refreshing access token with scopes: []
+[debug] [2022-12-15T15:02:15.506Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-15T15:02:15.507Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-15T15:02:15.794Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-15T15:02:15.794Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-15T15:02:15.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/navision-chat [none]
+[debug] [2022-12-15T15:02:16.933Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/navision-chat 200
+[debug] [2022-12-15T15:02:16.933Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/navision-chat {"projectId":"navision-chat","projectNumber":"874344182125","displayName":"Navision-Chat","name":"projects/navision-chat","resources":{"hostingSite":"navision-chat","storageBucket":"navision-chat.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_3db98c4c-ec92-465e-9c14-3a1620def23a"}
+[info] i  Using project navision-chat (Navision-Chat) 
+[info] 
+=== Firestore Setup
+[debug] [2022-12-15T15:02:16.948Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com [none]
+[debug] [2022-12-15T15:02:16.948Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com x-goog-quota-user=projects/navision-chat
+[debug] [2022-12-15T15:02:18.410Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com 200
+[debug] [2022-12-15T15:02:18.410Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com [omitted]
+[debug] [2022-12-15T15:02:18.411Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/navision-chat [none]
+[debug] [2022-12-15T15:02:19.127Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/navision-chat 200
+[debug] [2022-12-15T15:02:19.127Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/navision-chat {"name":"apps/navision-chat","id":"navision-chat","authDomain":"gmail.com","locationId":"europe-west","codeBucket":"staging.navision-chat.appspot.com","servingStatus":"SERVING","defaultHostname":"navision-chat.ew.r.appspot.com","defaultBucket":"navision-chat.appspot.com","serviceAccount":"navision-chat@appspot.gserviceaccount.com","gcrDomain":"eu.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-12-15T15:02:19.127Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-12-15T15:02:19.128Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T15:02:19.129Z] > authorizing via signed-in user (naversias@gmail.com)
+[debug] [2022-12-15T15:02:19.129Z] [iam] checking project navision-chat for permissions ["firebase.projects.get"]
+[debug] [2022-12-15T15:02:19.131Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions [none]
+[debug] [2022-12-15T15:02:19.131Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions x-goog-quota-user=projects/navision-chat
+[debug] [2022-12-15T15:02:19.132Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-15T15:02:20.247Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions 200
+[debug] [2022-12-15T15:02:20.247Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-12-15T15:02:25.725Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/releases pageSize=10&pageToken=
+[debug] [2022-12-15T15:02:26.296Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/releases 200
+[debug] [2022-12-15T15:02:26.296Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/releases {"releases":[{"name":"projects/navision-chat/releases/cloud.firestore","rulesetName":"projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30","createTime":"2022-12-09T12:14:51.855632Z","updateTime":"2022-12-12T14:38:07.916406Z"},{"name":"projects/navision-chat/releases/firebase.storage/navision-chat.appspot.com","rulesetName":"projects/navision-chat/rulesets/eb7be72f-5289-4efd-90c1-9dc7513c90cd","createTime":"2022-12-11T08:07:16.905925Z","updateTime":"2022-12-14T18:09:32.843069Z"}]}
+[debug] [2022-12-15T15:02:26.325Z] Found ruleset: projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30
+[debug] [2022-12-15T15:02:26.326Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30 [none]
+[debug] [2022-12-15T15:02:26.669Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30 200
+[debug] [2022-12-15T15:02:26.670Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-12-15T15:02:29.889Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-12-15T15:02:29.890Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2022-12-15T15:02:30.597Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2022-12-15T15:02:30.598Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/navision-chat/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2022-12-15T15:02:30.598Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-12-15T15:02:30.598Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-12-15T15:02:39.512Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-12-15T15:02:39.959Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-12-15T15:02:39.960Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[debug] [2022-12-15T15:02:40.157Z] Error: ENOTDIR: not a directory, scandir 'D:\projects code\main-project-chatApp\firereact-chat-app\firechat\y'
+    at Object.readdirSync (node:fs:1442:3)
+    at Object.createFileSync (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:12)
+    at C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:176:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async doSetup (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:133:9)
+    at async init (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-15T15:05:26.702Z] ----------------------------------------------------------------------
+[debug] [2022-12-15T15:05:26.706Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-15T15:05:26.707Z] CLI Version:   11.18.0
+[debug] [2022-12-15T15:05:26.707Z] Platform:      win32
+[debug] [2022-12-15T15:05:26.707Z] Node Version:  v16.17.0
+[debug] [2022-12-15T15:05:26.708Z] Time:          Thu Dec 15 2022 17:05:26 GMT+0200 (שעון ישראל (חורף))
+[debug] [2022-12-15T15:05:26.709Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-15T15:05:26.825Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T15:05:26.826Z] > authorizing via signed-in user (naversias@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects code\main-project-chatApp\firereact-chat-app\firechat
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-15T15:05:35.592Z] Using project from CLI flag: navision-chat
+[debug] [2022-12-15T15:05:35.597Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/navision-chat [none]
+[debug] [2022-12-15T15:05:36.165Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/navision-chat 200
+[debug] [2022-12-15T15:05:36.166Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/navision-chat {"projectId":"navision-chat","projectNumber":"874344182125","displayName":"Navision-Chat","name":"projects/navision-chat","resources":{"hostingSite":"navision-chat","storageBucket":"navision-chat.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_436ca264-def0-4dd6-8511-f48301de03a1"}
+[info] i  Using project navision-chat (Navision-Chat) 
+[info] 
+=== Firestore Setup
+[debug] [2022-12-15T15:05:36.182Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com [none]
+[debug] [2022-12-15T15:05:36.183Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com x-goog-quota-user=projects/navision-chat
+[debug] [2022-12-15T15:05:37.461Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com 200
+[debug] [2022-12-15T15:05:37.462Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/navision-chat/services/firestore.googleapis.com [omitted]
+[debug] [2022-12-15T15:05:37.463Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/navision-chat [none]
+[debug] [2022-12-15T15:05:38.089Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/navision-chat 200
+[debug] [2022-12-15T15:05:38.089Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/navision-chat {"name":"apps/navision-chat","id":"navision-chat","authDomain":"gmail.com","locationId":"europe-west","codeBucket":"staging.navision-chat.appspot.com","servingStatus":"SERVING","defaultHostname":"navision-chat.ew.r.appspot.com","defaultBucket":"navision-chat.appspot.com","serviceAccount":"navision-chat@appspot.gserviceaccount.com","gcrDomain":"eu.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-12-15T15:05:38.089Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-12-15T15:05:38.090Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T15:05:38.090Z] > authorizing via signed-in user (naversias@gmail.com)
+[debug] [2022-12-15T15:05:38.090Z] [iam] checking project navision-chat for permissions ["firebase.projects.get"]
+[debug] [2022-12-15T15:05:38.091Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions [none]
+[debug] [2022-12-15T15:05:38.091Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions x-goog-quota-user=projects/navision-chat
+[debug] [2022-12-15T15:05:38.091Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-15T15:05:39.220Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions 200
+[debug] [2022-12-15T15:05:39.220Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/navision-chat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-12-15T15:05:43.686Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/releases pageSize=10&pageToken=
+[debug] [2022-12-15T15:05:44.545Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/releases 200
+[debug] [2022-12-15T15:05:44.546Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/releases {"releases":[{"name":"projects/navision-chat/releases/cloud.firestore","rulesetName":"projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30","createTime":"2022-12-09T12:14:51.855632Z","updateTime":"2022-12-12T14:38:07.916406Z"},{"name":"projects/navision-chat/releases/firebase.storage/navision-chat.appspot.com","rulesetName":"projects/navision-chat/rulesets/02b605d1-f738-4c70-b34b-6d5a8040ffde","createTime":"2022-12-11T08:07:16.905925Z","updateTime":"2022-12-15T15:04:47.172593Z"}]}
+[debug] [2022-12-15T15:05:44.567Z] Found ruleset: projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30
+[debug] [2022-12-15T15:05:44.568Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30 [none]
+[debug] [2022-12-15T15:05:45.460Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30 200
+[debug] [2022-12-15T15:05:45.460Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/navision-chat/rulesets/9b0a7635-be41-483e-89bd-35cd50bf8b30 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-12-15T15:05:48.777Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-12-15T15:05:48.778Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2022-12-15T15:05:49.458Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2022-12-15T15:05:49.458Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/navision-chat/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2022-12-15T15:05:49.461Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-12-15T15:05:49.461Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/navision-chat/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-12-15T15:05:58.329Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-12-15T15:05:58.495Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-12-15T15:05:58.495Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[debug] [2022-12-15T15:05:58.664Z] Error: ENOTDIR: not a directory, scandir 'D:\projects code\main-project-chatApp\firereact-chat-app\firechat\y'
+    at Object.readdirSync (node:fs:1442:3)
+    at Object.createFileSync (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:12)
+    at C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:176:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async doSetup (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:133:9)
+    at async init (C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-21T11:36:23.273Z] ----------------------------------------------------------------------
+[debug] [2022-12-21T11:36:23.275Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jojo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-21T11:36:23.276Z] CLI Version:   11.18.0
+[debug] [2022-12-21T11:36:23.276Z] Platform:      win32
+[debug] [2022-12-21T11:36:23.276Z] Node Version:  v16.17.0
+[debug] [2022-12-21T11:36:23.281Z] Time:          Wed Dec 21 2022 13:36:23 GMT+0200 (שעון ישראל (חורף))
+[debug] [2022-12-21T11:36:23.282Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-21T11:36:23.285Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-21T11:36:23.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-21T11:36:23.376Z] > authorizing via signed-in user (naversias@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects code\main-project-chatApp\firereact-chat-app\firechat
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-12-21T11:36:23.754Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-21T11:36:23.755Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
